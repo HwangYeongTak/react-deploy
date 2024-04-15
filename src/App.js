@@ -8,14 +8,12 @@ function Greeting({name}) {
 function LikeButton() {
   const [liked, setLiked] = useState(false)
   if (liked) return 'you liked this';
-
   return React.createElement(
     'button', {
       onClick: () => setLiked(true),
     }
   )
 }
-
 function App() {
   return (
     //<Greeting name="World" />
